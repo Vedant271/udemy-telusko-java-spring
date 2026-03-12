@@ -17,5 +17,7 @@ public class MapDemo {
         System.out.println(hashMap1.keySet());
 
         System.out.println(hashMap1.entrySet());
+
+        System.out.println(hashMap1.values());
     }
 }
