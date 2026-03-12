@@ -13,7 +13,7 @@ public class IterableDemo {
         hashSet1.add(60);
 
         Iterator iterator = hashSet1.iterator();
-        
+
         while(iterator.hasNext()) System.out.println(iterator.next());
     }
 }
