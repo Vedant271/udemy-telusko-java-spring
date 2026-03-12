@@ -2,7 +2,7 @@ package CollectionFramework;
 
 import java.util.*;
 
-class Student {
+class Student implements Comparable<Student> {
     public int age;
     public int marks;
     public String name;
@@ -20,6 +20,11 @@ class Student {
                 ", marks=" + marks +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public int compareTo(Student that){
+        if(this.marks > that.marks) return 1;
+        else return -1;
     }
 }
 
@@ -54,11 +59,13 @@ public class ComparatorComparableDemo {
 
         // Using Object Comparator
         List<Student> students = new ArrayList<>();
-        students.add(new Student(23, 59, "Nitin"));
-        students.add(new Student(44, 89, "Omkar"));
-        students.add(new Student(35, 98, "Pooja"));
-        students.add(new Student(21, 99, "Harshali"));
+        students.add(new Student(23, 99, "Nitin"));
+        students.add(new Student(44, 79, "Omkar"));
+        students.add(new Student(35, 88, "Pooja"));
+        students.add(new Student(21, 100, "Harshali"));
 
+        System.out.println(students);
+        Collections.sort(students);
         System.out.println(students);
         Collections.sort(students, studentComparator);
         System.out.println(students);
