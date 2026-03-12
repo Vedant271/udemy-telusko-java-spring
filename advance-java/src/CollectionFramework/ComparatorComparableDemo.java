@@ -67,6 +67,7 @@ public class ComparatorComparableDemo {
         System.out.println(students);
         Collections.sort(students);
         System.out.println(students);
+        // Providing Comparator logic will prioritise comparator logic over compareTo logic of Comparable interface
         Collections.sort(students, studentComparator);
         System.out.println(students);
     }
