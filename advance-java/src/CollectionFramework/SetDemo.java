@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 
 public class SetDemo {
     public static void main(String[] args) {
-        HashSet<Integer> hashSet1 = new HashSet<>();
+        HashSet<Integer> hashSet1 = new HashSet<Integer>();
         // Never ever rely on hashset ordering,
         // even in case of, .add(1) .add(2) .add(3) .add(4), hashset buckets will be 1,2,3,4 most of the time this will
         // look sorted but java never guarantees order in hashset
@@ -16,7 +16,7 @@ public class SetDemo {
 
         System.out.println(hashSet1);
 
-        HashSet<Integer> hashSet2 = new HashSet<>();
+        HashSet<Integer> hashSet2 = new HashSet<Integer>();
         // in case of, .add(62) .add(54) .add(82) .add(21),
         // HashCode for Integer
         //hashCode = value
