@@ -1,0 +1,7 @@
+Steps using jdbc
+1. import package
+2. loading and registering of driver will be automatic by library
+3. create connection
+4. create statement
+5. execute statement
+6. close connection
