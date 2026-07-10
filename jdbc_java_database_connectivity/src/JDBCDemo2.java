@@ -6,8 +6,8 @@ public class JDBCDemo2 {
         String username = "postgres";
         String password = "Vedant@271";
         String query1 = "Insert into student values(6, 'John', 85)";
-        String query2 = "Update student set name = 'Max' where sid = 5";
-        String query3 = "Delete from student where sid = 5";
+        String query2 = "Update student set sname = 'Max' where sid = 6";
+        String query3 = "Delete from student where sid = 6";
 
         try{
             Connection connection = DriverManager.getConnection(url, username, password);
@@ -17,8 +17,7 @@ public class JDBCDemo2 {
             // execute can hit both Select as well as Insert/Update/Delete
             // execute returns true if ResultSet is returned i.e. Select query is hit
             // execute returns false if ResultSet is not returned i.e. Insert/Update/Delete query is hit
-            boolean status = statement.execute(query1);
-            System.out.println(status);
+            statement.execute(query2);
 
             connection.close();
             System.out.println("connection Closed");
