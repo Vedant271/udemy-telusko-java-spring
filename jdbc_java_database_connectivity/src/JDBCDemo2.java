@@ -17,7 +17,7 @@ public class JDBCDemo2 {
             // execute can hit both Select as well as Insert/Update/Delete
             // execute returns true if ResultSet is returned i.e. Select query is hit
             // execute returns false if ResultSet is not returned i.e. Insert/Update/Delete query is hit
-            statement.execute(query2);
+            statement.execute(query3);
 
             connection.close();
             System.out.println("connection Closed");
